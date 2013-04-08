@@ -1,0 +1,12 @@
+<%= form_for @event, :url => { :controller => 'events', :action => 'update', :id => @event } do |f| %>
+<!--未區塊化獨立出來至-->
+    <%= f.label :name, "Name" %>
+
+    <%= f.text_field :name %>
+     <br/><!--如同html排版-->
+    <%= f.label :description, "Description" %>
+     <br/>
+    <%= f.text_area :description %>
+<!--未區塊化獨立出來至_form,比較show-->
+    <%= f.submit "Update" %>
+<% end %>

@@ -1,0 +1,9 @@
+
+<%= form_for @event, :url => { :controller => 'events', :action => 'create' } do |f| %>
+	
+	<!--區塊化獨立出來至_form,比較edit-->
+	<%= render :partial => 'form', :locals => { :f => f } %>
+	<!--區塊化獨立出來至_form,比較edit-->
+    
+    <%= f.submit "Create" %>
+<% end %>
